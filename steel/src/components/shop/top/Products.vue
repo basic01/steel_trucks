@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
 export default {
   name: "ShopTopProducts",
   props: ["item"],
@@ -66,5 +65,10 @@ export default {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.top-product a,
+.top-product a:hover {
+  text-decoration: none;
 }
 </style>

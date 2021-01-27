@@ -53,7 +53,8 @@ export default {
   border-bottom-left-radius: 5px;
 }
 
-.product li a {
+.product a,
+.product a:hover {
   text-decoration: none;
 }
 </style>

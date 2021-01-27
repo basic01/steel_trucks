@@ -163,8 +163,8 @@ export default {
 .border-top-nav {
   margin-top: 100px;
 }
-a,
+/* a,
 a:hover {
   text-decoration: none;
-}
+} */
 </style>

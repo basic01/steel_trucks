@@ -24,8 +24,14 @@
       </div>
 
       <div class="col-md-11 col-lg-8">
-        <div class="top-products-header flex-center">
-          <img src="@/assets/logo_steel_hooks.png" alt="steel_hooks" />
+        <div class="row flex-center">
+          <div class="col-11 col-md-6 col-lg-5 top-products-header px-2">
+            <img
+              class="w-100"
+              src="@/assets/logo_steel_hooks.png"
+              alt="steel_hooks"
+            />
+          </div>
         </div>
         <div class="row">
           <ShopTopProducts

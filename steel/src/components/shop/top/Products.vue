@@ -16,18 +16,20 @@
           ></div>
         </div>
       </div>
-      <img
-        class="mb-4"
-        style="object-fit: cover"
-        :src="item.product.img"
-        :alt="item.product.name"
-      />
-      <div class="properties">
-        <p class="material mb-0">
-          {{ item.product.material }}
-        </p>
-        <p class="capacity mb-0">Capacidad: {{ item.product.capacity }}</p>
-      </div>
+      <router-link :to="{ name: 'shop.product' }">
+        <img
+          class="mb-4"
+          style="object-fit: cover"
+          :src="item.product.img"
+          :alt="item.product.name"
+        />
+        <div class="properties">
+          <p class="material mb-0">
+            {{ item.product.material }}
+          </p>
+          <p class="capacity mb-0">Capacidad: {{ item.product.capacity }}</p>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -41,6 +43,9 @@ export default {
 </script>
 
 <style>
+.colors {
+  color: black;
+}
 .top-product .use {
   font-size: 2em;
   color: black;

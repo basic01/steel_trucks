@@ -8,7 +8,7 @@
     >
       <label>{{ item.header.title }}</label>
     </div> -->
-    <div class="banner mb-5 tecnologia-banner">
+    <div class="banner mb-4 mb-lg-5 tecnologia-banner">
       <img :src="item.header.banner" :alt="item.header.title" />
     </div>
     <div class="description-tecnologia px-3 px-md-5">

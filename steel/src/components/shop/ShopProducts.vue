@@ -14,17 +14,19 @@
           :product="product"
         >
           <div class="product">
-            <img
-              class="w-100 mx-auto"
-              style="object-fit: cover"
-              :src="product.img"
-              :alt="product.name"
-            />
-            <!-- <router-link> -->
-            <p class="product-name">
-              {{ product.name }}
-            </p>
-            <!-- </router-link> -->
+            <router-link :to="{ name: 'shop.product' }">
+              <img
+                class="w-100 mx-auto"
+                style="object-fit: cover"
+                :src="product.img"
+                :alt="product.name"
+              />
+              <!-- <router-link> -->
+              <p class="product-name">
+                {{ product.name }}
+              </p>
+              <!-- </router-link> -->
+            </router-link>
           </div>
         </div>
       </div>
@@ -49,5 +51,9 @@ export default {
   font-size: 1.1em;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.product li a {
+  text-decoration: none;
 }
 </style>
